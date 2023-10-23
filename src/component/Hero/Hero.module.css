@@ -1,0 +1,276 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+ } 
+ .hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+ } 
+.lefth{
+    padding: 1.5rem 2rem 2rem;
+    display: flex;
+    flex: 3 ;
+    gap: 2rem;
+    flex-direction: column;
+}
+.righth{
+    flex: 1;
+    background-color: var(--orange);
+}
+.righth button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    background-color: #fff;
+    border: 4px solid transparent;
+    font-weight: 700;
+    padding: 0.5rem;
+    transition: all .3s;
+}
+.thebestad{
+margin-top: 4rem;
+background-color: #363d42;
+border-radius: 4rem;
+width: fit-content;
+color: #fff;
+padding: 20px 13px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.thebestad span{
+    z-index: 2;
+}
+.thebestad div{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    background-color: var(--orange);
+    /* opacity: 0.7; */
+    z-index: 1;
+}
+
+.heroHeading{
+    display: flex;
+    flex-direction: column;
+    gap:1.5 rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    font-weight: bold;
+    color:#fff;
+    text-overflow: inherit;
+}
+.headingtext{
+    font-size: 1rem;
+    font-weight:200;
+    text-transform: none;
+    letter-spacing: 1px;
+   width: 80%;
+}
+
+.figures {
+    display: flex;
+    gap: 3rem;
+
+}
+.figures div{
+    display: flex;
+    flex-direction: column;
+}
+.figures div span:nth-of-type(1)
+{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+.figures div span:nth-of-type(2)
+{
+    color: var(--grey);
+    text-transform: uppercase;
+    color:rgb(200, 192, 192)
+}
+.headingbtn{
+  display: flex;
+   gap: 1rem;
+   font-weight: 400!important;
+    color: var(--orange);
+}
+.btn1{
+    background-color: var(--orange);
+    border: 4px solid transparent;
+    color: #fff;
+   /* display: inline-block; */
+   width: 8rem;
+   height: 40px;
+   padding: 0.5rem;
+   font-weight: bold;
+}
+.btn2{
+    background-color: transparent;
+    color: #fff;
+    border: 2px  solid;
+    border-color: var(--orange);
+    /* display: inline-block; */
+    width: 8rem;
+    height: 40px;
+    padding: 0.5rem;
+    font-weight: bold;
+
+
+}
+.heroHeadImg{
+    position: absolute;
+    right: 8rem;
+    top: 10rem;
+    width: 23rem;
+
+}
+.heartBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+.heart{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.heartBox div span:nth-of-type(1){
+  /* font-size: 1rem; */
+  color: var(--gray);
+    
+}
+.heartBox span:nth-of-type(2){
+    font-size: 1.5rem;
+    color: #fff;
+      
+}
+.heroBack{
+   position: absolute;
+   right: 20rem;
+   top: 4rem;
+  width: 240px;
+  height: 417px;
+  z-index: -1;
+}
+.caloriesbox{
+    padding: 1rem 1rem;
+    display: flex;
+    width: 8rem;
+    height: 6rem;
+    background-color: var(  --caloryCard);
+    border-radius: 5px;
+    gap:1.5rem;
+    position: absolute;
+    top: 38rem;
+    right: 32rem;
+}
+.calories{
+    width: 48px;
+    height: 98px;
+}
+.caloriesbox div:nth-of-type(2)
+{
+    display: flex;
+    flex-direction: column;
+    color: var(--lightgray);
+
+}
+.caloriesbox div span:nth-of-type(2)
+{
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* 
+@media screen and (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .thebestad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .heroHeading
+    {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .heroHeading>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .headingbtn{
+        justify-content: center;
+        
+    }
+} */
+
+@media (max-width: 767px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-blur {
+      width: 100%;
+      height: auto;
+      left: auto;
+    }
+  
+    .lefth {
+      padding: 1.5rem;
+    }
+  
+    .righth {
+      flex: 1;
+      margin-top: 2rem;
+    }
+  
+    .righth button {
+      right: 1.5rem;
+      top: 1.5rem;
+    }
+  
+    .heroHeadImg {
+      position: static;
+      margin-top: 2rem;
+      width: 100%;
+    }
+  
+    .heartBox {
+      position: static;
+      margin-top: 2rem;
+      width: 100%;
+    }
+  
+    .heroBack {
+      display: none;
+    }
+  
+    .caloriesbox {
+      position: static;
+      margin-top: 2rem;
+      right: 0;
+    }
+  }

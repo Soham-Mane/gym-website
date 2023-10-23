@@ -1,0 +1,32 @@
+.navbar {
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+  }
+  
+.navbarmenu{
+list-style: none;
+display: flex;
+gap:2rem;
+color: white;
+}
+.navbarmenu li{
+    cursor: pointer;
+}
+
+.navbarmenu li:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .navbar {
+      /* Adjust padding or other styles for mobile */
+      padding: 5px;
+    }
+  
+    .navbarmenu {
+      /* Adjust styles for mobile */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }

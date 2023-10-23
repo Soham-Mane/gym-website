@@ -1,0 +1,73 @@
+.TestimonialContainer{
+    display: flex;
+}
+.lefttesti{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+}
+.lefttesti :nth-child(1)
+{
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.lefttesti :nth-child(2)
+{
+    font-size: 3rem;
+}
+
+.lefttesti :nth-child(3)
+{
+    font-size: 3rem;
+}
+.lefttesti :nth-child(4)
+{
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.righttesti{
+    flex: 1;
+    position: relative;
+}
+.gymImages{
+position: absolute;
+right:8rem;
+top: 2rem;
+width:17rem;
+height: 20rem;
+object-fit: cover;
+}
+.arrows {
+position: relative;
+left:6rem;
+top:20rem;
+display: flex;
+gap:1rem;
+
+}
+.righttesti div:nth-child(1)
+{
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    right:9rem;
+ top: 1rem;   border: 2px solid;
+   border-color: var(--orange);
+}
+.righttesti div:nth-child(2)
+{
+    width:17rem;
+    height: 20rem;
+    position: absolute;
+    right:7rem;
+    top: 3rem;
+ background: var(--planCard);
+
+}
